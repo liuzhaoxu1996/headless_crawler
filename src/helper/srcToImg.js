@@ -5,16 +5,15 @@ const path = require('path');
 const { promisify } = require('util');
 const writeFile = promisify(fs.writeFile);
 
-
 module.exports = async(src, dir) => {
   if(/\.(jpg|png|gif)$/.test(src)) {
     await urlToImg(src, dir);
-
   }else {
     await base64ToImg(src, dir); 
   }
 }
 
+// 识别src为http或者https的图片
 const urlToImg = promisify((url, dir, callback) => {
   const mod = /^https:/.test(url) ? https : http;
   const ext = path.extname(url);
@@ -28,9 +27,9 @@ const urlToImg = promisify((url, dir, callback) => {
   })
 })
 
+// 识别src为base64地址的图片
 const base64ToImg = async (base64Str, dir) => {
   // data: image/jpeg;base64,/raegreagearg
-
   const matchs = base64Str.match(/^data:(.+?);base64,(.+)$/);
   try {
     const ext = matches[1].split('/')[1]

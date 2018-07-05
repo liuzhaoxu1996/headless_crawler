@@ -1,11 +1,19 @@
 {
   "name": "headless-crawler",
   "version": "1.0.0",
-  "description": "",
+  "description": "<!-- [START badges] --> [![Linux Build Status](https://img.shields.io/travis/GoogleChrome/puppeteer/master.svg)](https://travis-ci.org/GoogleChrome/puppeteer) [![Windows Build Status](https://img.shields.io/appveyor/ci/aslushnikov/puppeteer/master.svg?logo=appveyor)](https://ci.appveyor.com/project/aslushnikov/puppeteer/branch/master) [![Build Status](https://api.cirrus-ci.com/github/GoogleChrome/puppeteer.svg)](https://cirrus-ci.com/github/GoogleChrome/puppeteer) [![NPM puppeteer package](https://img.shields.io/npm/v/puppeteer.svg)](https://npmjs.org/package/puppeteer) <!-- [END badges] -->",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuzhaoxu1996/headless_crawler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liuzhaoxu1996/headless_crawler/issues"
+  },
+  "homepage": "https://github.com/liuzhaoxu1996/headless_crawler#readme"
 }
